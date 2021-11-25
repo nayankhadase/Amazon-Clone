@@ -17,8 +17,6 @@ class CollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        productImage.image = UIImage(named: product_img ?? "bagimage3")
-//        productLabel.text = product_name
     }
     
 }

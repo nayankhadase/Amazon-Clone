@@ -11,6 +11,8 @@
 		105067F7274F7B68007B45BE /* EcommerceJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 105067F6274F7B68007B45BE /* EcommerceJson.json */; };
 		105067FD274F7BE9007B45BE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105067FC274F7BE9007B45BE /* ModelData.swift */; };
 		10506801274F7F23007B45BE /* DecodedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10506800274F7F23007B45BE /* DecodedData.swift */; };
+		10506803274FBADE007B45BE /* SeeAllProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10506802274FBADE007B45BE /* SeeAllProductsViewController.swift */; };
+		10506805274FBB3A007B45BE /* SeeAllProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10506804274FBB3A007B45BE /* SeeAllProductTableViewCell.swift */; };
 		10906921274F65EF00C330A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10906920274F65EF00C330A4 /* AppDelegate.swift */; };
 		10906923274F65F000C330A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10906922274F65F000C330A4 /* ViewController.swift */; };
 		10906926274F65F000C330A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10906924274F65F000C330A4 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		105067F6274F7B68007B45BE /* EcommerceJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = EcommerceJson.json; path = "../../../../Downloads/StarterProjectCollectionViewTableView-master 2/EcommerceUI/EcommerceUI/EcommerceJson.json"; sourceTree = "<group>"; };
 		105067FC274F7BE9007B45BE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		10506800274F7F23007B45BE /* DecodedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedData.swift; sourceTree = "<group>"; };
+		10506802274FBADE007B45BE /* SeeAllProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllProductsViewController.swift; sourceTree = "<group>"; };
+		10506804274FBB3A007B45BE /* SeeAllProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllProductTableViewCell.swift; sourceTree = "<group>"; };
 		1090691D274F65EF00C330A4 /* collectionView In Table view cell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collectionView In Table view cell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10906920274F65EF00C330A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10906922274F65F000C330A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 			children = (
 				10906932274F735C00C330A4 /* TableViewCell.swift */,
 				105067F4274F75C4007B45BE /* CollectionViewCell.swift */,
+				10506804274FBB3A007B45BE /* SeeAllProductTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -66,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				10906922274F65F000C330A4 /* ViewController.swift */,
+				10506802274FBADE007B45BE /* SeeAllProductsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -100,8 +106,8 @@
 			children = (
 				10906920274F65EF00C330A4 /* AppDelegate.swift */,
 				105067FB274F7BC0007B45BE /* Model */,
-				105067FA274F7BAB007B45BE /* Controller */,
 				105067F8274F7B95007B45BE /* Cells */,
+				105067FA274F7BAB007B45BE /* Controller */,
 				105067F9274F7BA3007B45BE /* View */,
 				10906927274F65F800C330A4 /* Assets.xcassets */,
 				1090692C274F65F800C330A4 /* Info.plist */,
@@ -185,6 +191,8 @@
 			files = (
 				10506801274F7F23007B45BE /* DecodedData.swift in Sources */,
 				10906933274F735C00C330A4 /* TableViewCell.swift in Sources */,
+				10506805274FBB3A007B45BE /* SeeAllProductTableViewCell.swift in Sources */,
+				10506803274FBADE007B45BE /* SeeAllProductsViewController.swift in Sources */,
 				10906923274F65F000C330A4 /* ViewController.swift in Sources */,
 				105067FD274F7BE9007B45BE /* ModelData.swift in Sources */,
 				105067F5274F75C4007B45BE /* CollectionViewCell.swift in Sources */,

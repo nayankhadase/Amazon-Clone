@@ -12,11 +12,14 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productLabel: UILabel!
     
-    var product_img: String?
-    var product_name: String?
+//    var product_img: String?
+//    var product_name: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.layer.borderWidth = 0.5
+        self.clipsToBounds = true
     }
     
 }

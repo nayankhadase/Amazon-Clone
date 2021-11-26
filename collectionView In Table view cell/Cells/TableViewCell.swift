@@ -8,20 +8,26 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+typealias SeeAllClosure = ((_ index: Int?) -> Void)
 
+class TableViewCell: UITableViewCell {
+    @IBOutlet weak var seeAllBtnOutlet: UIButton!
+    
     var productArray: [Products]?{
         didSet{
             self.collectionView.reloadData()
         }
     }
-    
+    var index: Int?
+    var onClickSeeAllClosure: SeeAllClosure?
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
+        seeAllBtnOutlet.layer.cornerRadius = 4.0
+        
         // Initialization code
     }
 
@@ -30,8 +36,10 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
     @IBAction func seeAllButton(_ sender: Any) {
+        onClickSeeAllClosure?(index)
     }
 }
 extension TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{

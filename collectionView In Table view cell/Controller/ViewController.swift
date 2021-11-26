@@ -26,9 +26,19 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         decodedData.delegate = self
+        
+        
         decodedData.loadJSONData(for: "EcommerceJson")
+        
     }
 
+    func moveToProductListing(index: Int){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SeeAllProductsViewController") as? SeeAllProductsViewController else {
+            return
+        }
+        vc.allProdData = categoryArray?.response?[index].products
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
@@ -41,7 +51,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         cell.category.text = categoryArray?.response?[indexPath.row].category_name
         cell.productArray = categoryArray?.response?[indexPath.row].products
+        cell.index = indexPath.row
+        cell.onClickSeeAllClosure = { index in
+            if let indexp = index{
+                self.moveToProductListing(index: indexp)
+            }
+        }
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
     }
     
     
